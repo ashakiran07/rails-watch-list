@@ -1,0 +1,17 @@
+<div class="banner-list" style="background-image: url('https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNpbmVtYXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60')">
+<h1><%= @movie.title %></h1>
+</div>
+
+<div class="card-show-movie">
+  <%= image_tag @movie.poster_url, class:"poster-img" %>
+  <div class="card-show-movie-text">
+    <h4><strong><%= @movie.title %> <%= number_with_precision(@movie.rating, precision: 1) %><i class="fas fa-star"></i></strong></h4>
+    <p><%= @movie.overview %></p>
+    <%= link_to 'Back to Movies List', movies_path, class: 'ml-3 text-warning' %>
+    <%= link_to "Delete",
+      movie_path(@movie),
+      method: :delete,
+      data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: 'ml-3 text-danger' %>
+    </div>
+  </div>
+</div>
