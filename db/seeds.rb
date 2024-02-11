@@ -24,7 +24,7 @@ end
 Movie.transaction do
   movies_data = fetch_movies_from_proxy
 
-  movies_data.first(10).each do |movie_data|
+  movies_data.first(4).each do |movie_data|
     Movie.create!(
       title: movie_data['title'],
       overview: movie_data['overview'],
