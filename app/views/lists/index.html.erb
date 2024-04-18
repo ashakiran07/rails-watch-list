@@ -1,42 +1,31 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container">
-    <!-- Brand/logo -->
-    <a class="navbar-brand" href="#">
-      <img src="https://images.unsplash.com/photo-1622498186306-1c97361dabbb?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="40" height="40" style="margin-left: 0;" class="d-inline-block align-top" alt="">
-    </a>
-
-    <!-- Toggler/collapsible Button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Navbar links -->
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <!-- My Lists button -->
-        <li class="nav-item">
-          <%= link_to "My Lists", lists_path, class: "nav-link" %>
-        </li>
-        <!-- New List button -->
-        <li class="nav-item">
-          <%= link_to "New List", new_list_path, class: "nav-link" %>
-        </li>
+<div class="banner-container">
+  <div class="banner-nav-bar">
+    <div><h1><i class="fas fa-play"></i><span class="logo-title">Watch List</span></h1></div>
+    <div>
+      <ul class="banner-ul">
+        <li>Login</li>
+        <li class="btn-sign">Sign up</li>
       </ul>
     </div>
   </div>
-</nav>
 
-<div class="banner" style="background-image: url(https://images.unsplash.com/photo-1604975701397-6365ccbd028a?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
-  <div class="container">
-    <h1>Save any kind of <strong>movie</strong> !</h1>
+  <div class="banner-info">
+    <div>
+      <p class="banner-title">MOVIES COLLECTION</p>
+      <p class="banner-subtitle">All movies available right now!</p>
+      <div class="btn-infos">
+        <p class="btn-add"><%= link_to "Add movie", new_movie_path(@movie) %></p>
+        <p class="btn-more-info"><%= link_to "Add list", new_list_path(@bookmark) %></p>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="container py-5">
-  <div class="d-flex align-items-center justify-content-between mb-3">
-    <h3 class="mb-0">My Lists</h3>
-    <%= link_to "Create a New List", new_list_path, class: "btn btn-success" %>
-  </div>
+<div class="movie-category">
+  <p class="category-title">MY LISTS</p>
+</div>
+
+<div class="container">
   <div class="row">
     <% @lists.each do |list| %>
       <div class="col-4 mb-4">

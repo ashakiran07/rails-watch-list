@@ -1,26 +1,116 @@
-.banner {
-  background-size: cover;
+
+.banner-container{
+  position: relative;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),  url("https://res.cloudinary.com/dloadb2bx/image/upload/v1619114038/back1_g569ue.jpg");
+  height: 70vh;
   background-position: center;
-  padding: 150px 0;
-  height: 500px;
-  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+
+  h1{
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+
+  ul{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  li{
+    padding: 5px 20px;
+    margin: 0 20px;
+    list-style-type: none;
+  }
+
+  .banner-nav-bar{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .fa-play{
+    margin-right: 10px;
+  }
+
+
+
+  .banner-info{
+    position: absolute;
+    margin-top: 10px;
+    padding: 50px;
+  }
+
+  .banner-title{
+    margin: 0;
+    font-size: 42px;
+    font-weight: 700;
+  }
+
+  .banner-subtitle{
+    font-weight: 300;
+    margin: 0 0 10px;
+    font-size: 28px;
+  }
 }
 
-.banner-list {
-  background-size: cover;
-  background-position: center;
-  padding: 150px 0;
-  height: 300px;
-  text-align: center;
+
+
+.btn-sign{
+  width: 220;
+  background-color: #FF0079;
 }
 
-.banner h1 {
-  margin: 0;
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 32px;
+.btn-infos{
+  width: 390px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
   font-weight: bold;
+
+  .btn-add{
+    padding: 5px 20px;
+    width: 180px;
+    background-color: #FF0079;
+  }
+
+  .btn-add a{
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .btn-more-info{
+    padding: 5px 20px;
+    width: 180px;
+    border: 1px solid #fff;
+  }
+
+  .btn-more-info a{
+    color: #fff;
+    text-decoration: none;
+  }
 }
+
+
+
+.movie-category{
+  text-align: center;
+  padding: 0 5px;
+  color: #fff;
+  margin-top: 20px;
+  width: 400px;
+  background-color: #FF0079;
+  border-radius: 0 20px 20px 0;
+
+  .category-title{
+    padding: 10px;
+    font-size: 22px;
+    font-weight: 700;
+  }
+}
+
 
 .add-movie-btn {
   position: absolute;
