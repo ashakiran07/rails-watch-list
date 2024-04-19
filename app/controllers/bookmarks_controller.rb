@@ -16,6 +16,9 @@ class BookmarksController < ApplicationController
     end
   end
 
+  def show
+  end
+
   def destroy
     @bookmark.destroy
     redirect_to list_path(@bookmark.list), status: :see_other
@@ -24,7 +27,7 @@ class BookmarksController < ApplicationController
   private
 
   def bookmark_params
-    params.require(:bookmark).permit(:comment, :movie_id)
+    params.require(:bookmark).permit(:comment, :movie_id, :list_id)
   end
 
   def set_bookmark

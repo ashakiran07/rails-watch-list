@@ -1,0 +1,188 @@
+
+.movie-box{
+  border-radius: 20px 20px 0 0;
+  margin-top: -100px;
+  background-color: #fff;
+}
+
+.card-movie img{
+  height: 300px;
+}
+.card-movie{
+  border-radius: 0 20px 20px 0;
+  margin: 10px auto;
+  background-color: #8d8d8d;
+  height: 300px;
+  width: 95%;
+}
+
+.movie-list-title{
+  padding: 30px 0 5px;
+  margin: 20px 0 0;
+  text-align: center;
+}
+
+.movie-content{
+  border-radius: 20px;
+  margin-top: -100px;
+  background-color: #fff;
+  padding: 30px;
+}
+
+.banner-change{
+  z-index: -1;
+}
+
+
+.img-border{
+  border-left: 5px solid #FF0079;
+  padding: 5px;
+  width: 95%;
+}
+
+.btn-style{
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-edit{
+  padding: 5px 35px;
+  border-radius: 10px;
+  background-color: #FF0079;
+  color: #fff;
+
+}
+
+.btn-delete{
+  padding: 5px 35px;
+  border-radius: 10px;
+  background-color: #542e71;
+  color: #fff;
+}
+
+.btn-book{
+  padding: 5px 35px;
+  border-radius: 10px;
+  background-color: #FF0079;
+  color: #fff;
+}
+
+.box-poster{
+  width: 250px;
+}
+
+.movies-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  margin: 10px;
+}
+
+.img-poster{
+  width: 250px;
+  margin: 10px 0;
+  border: 1px solid #E8E8E8;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.new-form{
+  background-color: #fff;
+  border-radius: 20px;
+  width: 720px;
+  margin: -100px auto 20px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+.left-bg-new{
+  background-image: url("https://res.cloudinary.com/dloadb2bx/image/upload/v1619107788/wonderwoman_vdrxmc.jpg");
+  background-size: cover;
+  border-radius: 20px 0 0 20px;
+}
+
+.left-bg-list{
+  background-image: url("https://i.pinimg.com/originals/0d/13/82/0d1382f7cb1a5ca4a369cfac740b0653.jpg");
+  background-size: cover;
+  border-radius: 20px 0 0 20px;
+}
+
+.right-bg{
+  border-radius: 20px;
+  padding: 40px;
+  background-color: #fff;
+}
+
+.img-add-new{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.btn-submit-movie{
+  background-color: #542e71;
+  color: #fff;
+  width: 100%;
+}
+
+
+.movie-display{
+  height: 810px;
+  margin-top: -100px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.img-display-poster{
+  width: 100%;
+  margin-left: -15px;
+  border-radius: 20px 0 0 20px;
+}
+
+.movie-display-content{
+  padding: 30px;
+}
+
+.movie-header-content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-movie-edit{
+  border-radius: 10px;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 25px;
+  background-color: #542e71;
+}
+
+.btn-movie-edit a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-movie-edit a:hover{
+  color: #fff;
+  text-decoration: none;
+}
+
+.movie-rating{
+  font-size: 22px;
+  color: #fff;
+  padding: 10px;
+  background-color: #542e71;
+
+
+}
+
+
+.movie-title{
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.movie-path{
+  text-align: center;
+  font-weight: 300;
+  font-size: 18px;
+}

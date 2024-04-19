@@ -6,7 +6,7 @@
         <%= simple_form_for [@list, @bookmark] do |f| %>
           <%= f.input :comment, placeholder: 'Enter a comment about the movie' %>
           <%= f.association :movie, prompt: "Select a movie", input_html: {data: { controller: "tom-select"}} %>
-          <%= f.submit class: "btn btn-flat" %>
+          <%= f.submit class: "btn btn-flat mt-2" %>
         <% end %>
       </div>
     </div>

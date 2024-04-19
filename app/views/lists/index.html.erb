@@ -1,6 +1,6 @@
 <div class="banner-container">
   <div class="banner-nav-bar">
-    <div><h1><i class="fas fa-play"></i><span class="logo-title">Watch List</span></h1></div>
+    <div><h2></h2></div>
     <div>
       <ul class="banner-ul">
         <li>Login</li>
@@ -11,8 +11,8 @@
 
   <div class="banner-info">
     <div>
-      <p class="banner-title">MOVIES COLLECTION</p>
-      <p class="banner-subtitle">All movies available right now!</p>
+      <p class="banner-title"><i class="fas fa-video"></i> CINEPHILE</p>
+      <p class="banner-subtitle">Your Ultimate Movie Watchlist Companion!</p>
       <div class="btn-infos">
         <p class="btn-add"><%= link_to "Add movie", new_movie_path(@movie) %></p>
         <p class="btn-more-info"><%= link_to "Add list", new_list_path(@bookmark) %></p>
@@ -44,3 +44,5 @@
     <% end %>
   </div> <!-- Close the row -->
 </div> <!-- Close the container -->
+
+<%= render 'footer' %>

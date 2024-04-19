@@ -1,11 +1,14 @@
 <div class="banner" style="background-image: url(https://images.unsplash.com/photo-1578674473215-9e07ee2e577d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQ4fHxtb3ZpZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60)">
   <div class="container">
   </div>
-</div>
 
-<div class="new-lists">
-  <div class="new-list">
-    <h1>Create a new <strong>movie</strong> !</h1>
+
+<div class="container py-5">
+  <div class="row">
+    <div class="col-12 col-md-6 offset-lg-3">
+      <div class="bg-white rounded p-3 shadow">
+
+    <h1 class="text-centre">Create a new <strong>movie</strong> !</h1>
     <%= simple_form_for [ @movie ] do |f| %>
       <%= f.input :title %>
       <%= f.input :overview %>
@@ -14,4 +17,7 @@
       <%= f.submit "Submit", class: "btn btn-success" %>
     <% end %>
   </div>
+</div>
+</div>
+</div>
 </div>

@@ -1,17 +1,37 @@
-<div class="banner-list" style="background-image: url('https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNpbmVtYXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60')">
-<h1><%= @movie.title %></h1>
-</div>
+<%= render 'header' %>
 
-<div class="card-show-movie">
-  <%= image_tag @movie.poster_url, class:"poster-img" %>
-  <div class="card-show-movie-text">
-    <h4><strong><%= @movie.title %> <%= number_with_precision(@movie.rating, precision: 1) %><i class="fas fa-star"></i></strong></h4>
-    <p><%= @movie.overview %></p>
-    <%= link_to 'Back to Movies List', movies_path, class: 'ml-3 text-warning' %>
-    <%= link_to "Delete",
-      movie_path(@movie),
-      method: :delete,
-      data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: 'ml-3 text-danger' %>
+<div class="container">
+  <div class="row movie-display">
+    <div class="col-lg-6">
+      <img class="img-display-poster" src="<%= @movie.poster_url %>" >
+    </div>
+    <div class="col-lg-6 movie-display-content">
+      <div class="movie-header-content">
+        <p class="movie-title"><%= @movie.title %></p>
+        <p class="btn-movie-edit"><%= link_to "Edit movie", edit_movie_path(@movie) %></p>
+      </div>
+
+      <div>
+        <p><span class="movie-rating"><%= @movie.rating %></span></p>
+      </div>
+
+        <p>
+          <%= @movie.overview %>
+        </p>
+
+        <div>
+          <iframe
+  width="500"
+  height="315"
+  src="<%= @movie.trailer %>"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+></iframe>
+
+        </div>
+
+
     </div>
   </div>
 </div>

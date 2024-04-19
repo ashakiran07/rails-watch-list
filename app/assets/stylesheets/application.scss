@@ -10,6 +10,7 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+@import "lists";
 
 body{
   font-family: 'Roboto', sans-serif;
@@ -64,7 +65,6 @@ body{
   height: 50px;
   text-align: center;
   padding: 10px;
-  color: #494C62;
 }
 
 .box-title a{
@@ -118,7 +118,7 @@ body{
   text-decoration: none;
   color: #fff;
   padding: 5px;
-  background-color: #FF0079;
+  background-color: #f38d08;
   border-radius: 0 20px 20px 0;
 }
 

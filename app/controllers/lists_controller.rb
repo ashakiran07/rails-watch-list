@@ -1,5 +1,5 @@
 class ListsController < ApplicationController
-  before_action :set_list, only: [:show, :destroy]
+  before_action :set_list, only: [:show, :edit, :update, :destroy]
 
   def index
     @lists = List.all
@@ -8,6 +8,7 @@ class ListsController < ApplicationController
   def show
     @bookmark = Bookmark.new
     @review = Review.new(list: @list)
+    @movies = @list.movies
   end
 
   def new
@@ -23,6 +24,21 @@ class ListsController < ApplicationController
       render :new, status: :unprocessable_entity
     end
   end
+
+  # lists_controller.rb
+
+  def edit
+  @list = List.find(params[:id])
+  end
+
+  def update
+    if @list.update(list_params)
+      redirect_to list_path(@list)
+    else
+      render :edit, status: :unprocessable_entity
+    end
+  end
+
 
   def destroy
     @list.destroy

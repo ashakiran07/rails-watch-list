@@ -1,5 +1,8 @@
-<%= simple_form_for [@list, @bookmark] do |f| %>
-  <%= f.input :comment %>
-  <%= f.association :movie %>
-  <%= f.submit class: 'btn-submit mt-3' %>
+<%= simple_form_for(movie) do |f| %>
+  <%= f.input :title %>
+  <%= f.input :rating %>
+  <%= f.input :overview %>
+  <%= f.input :poster_url %>
+  <%= f.input :trailer, placeholder: "Only the code after 'watch?v=' " %>
+  <%= f.submit class: 'btn-submit-movie mt-3' %>
 <% end %>
