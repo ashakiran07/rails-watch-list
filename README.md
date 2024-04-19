@@ -28,8 +28,11 @@ This project was created with:
 ## Adding Trailer to Movie
 ![enter image description here](https://github.com/ashakiran07/rails-watch-list/blob/master/public/img/addingTrailer.png?raw=true)
 
+## Adding Review to list
+![enter image description here](https://github.com/ashakiran07/rails-watch-list/blob/master/public/img/movies-review.png?raw=true)
+
 ## How to run this project
-Download or clone it. . Then run in the main folder the command `rails server`. If needed, run `bundle install` to check if all gems are correctly installed. Then open the project on `localhost:3000/lists`
+Download or clone it. . Then run in the main folder the command `rails server`. If needed, run `bundle install` to check if all gems are correctly installed. Then open the project on `localhost:3000`
 
 ## Heroku version- Not available now.
 
@@ -62,7 +65,7 @@ As user you can manipulate all **CRUD** operations like:
      - Adding CSS to Show page;
      - Movie Controller created;
 
-    - Creating new page to add new bookmark;
+     - Creating new page to add new bookmark;
 
      - Convert the project o use postgresql;
      - Dotenv added - to protect data;
@@ -82,6 +85,9 @@ As user you can manipulate all **CRUD** operations like:
      - Using <%= render %> to display the shared header - clean code concepts;
      - Movies page - CSS added;
      - Adding files for future mobile version;
+
+     - Review model, controller created;
+     - Add review to the list;
 
      - Adding footer with link to github.
 
