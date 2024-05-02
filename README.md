@@ -1,3 +1,5 @@
+A simple Rails project that allow users to create a movie and bookmark it in a category list.
+
 # Watch List
 
 ![main banner](https://github.com/ashakiran07/rails-watch-list/blob/master/public/img/list-moviestypes.png?raw=true)
