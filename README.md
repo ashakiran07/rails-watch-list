@@ -1,3 +1,4 @@
+# Intro
 A simple Rails project that allow users to create a movie and bookmark it in a category list.
 
 # Watch List
