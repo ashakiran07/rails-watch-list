@@ -33,9 +33,10 @@ This project was created with:
 ![enter image description here](https://github.com/ashakiran07/rails-watch-list/blob/master/public/img/movies-review.png?raw=true)
 
 ## How to run this project
-Download or clone it. . Then run in the main folder the command `rails server`. If needed, run `bundle install` to check if all gems are correctly installed. Then open the project on `localhost:3000`
+Download or clone it. Then run in the main folder the command `rails server`. If needed, run `bundle install` to check if all gems are correctly installed. Then open the project on `localhost:3000`
 
-## Heroku version- Not available now.
+## Heroku version- 
+Uploaded and Tested successfully in Heroku. 
 
 
 ## What user can do?
