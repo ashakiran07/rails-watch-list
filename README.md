@@ -6,7 +6,6 @@ A simple Rails project that allow users to create a movie and bookmark it in a c
 
 ## Technologies
 This project was created with:
-
  - [Ruby](https://www.ruby-lang.org/pt/)
  - [Rails](https://rubygems.org/gems/rails)
  - [ERB](https://ruby-doc.org/stdlib-2.7.1/libdoc/erb/rdoc/ERB.html) (for template system with Ruby)
