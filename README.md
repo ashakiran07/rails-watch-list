@@ -37,7 +37,6 @@ Download or clone it. Then run in the main folder the command `rails server`. If
 ## Heroku version- 
 Uploaded and Tested successfully in Heroku. 
 
-
 ## What user can do?
 As user you can manipulate all **CRUD** operations like:
 
