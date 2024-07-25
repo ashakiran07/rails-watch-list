@@ -16,6 +16,7 @@ This project was created with:
 
 ## Movie list
 ![enter image description here](https://github.com/ashakiran07/rails-watch-list/blob/master/public/img/mylist.png?raw=true)
+
 ## Show
 ![rshow1](https://github.com/ashakiran07/rails-watch-list/blob/master/public/img/movies-list.png?raw=true)
 
