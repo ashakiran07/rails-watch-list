@@ -1,5 +1,6 @@
 ## Rails Watch List: Intro
 This is a simple Ruby on Rails project that allow users to create a movie, bookmark it in a category list and also leave a review.
+
 ![main banner](https://github.com/ashakiran07/rails-watch-list/blob/master/public/img/list-moviestypes.png?raw=true)
 
 ## Technologies
@@ -38,7 +39,6 @@ Uploaded and Tested successfully in Heroku.
 
 ## What user can do?
 As user you can manipulate all **CRUD** operations like:
-
  - Insert a new movie on database;
  - Insert a new list on database;
  - Insert movies on list to be displayed on each list;
