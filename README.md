@@ -46,7 +46,6 @@ As user you can manipulate all **CRUD** operations like:
  - Delete a list;
 
 ## Development routine
-
      - Project created;
      - Prepare rails app with external specs;
      - Adding bootstrap, jquery and popper;
