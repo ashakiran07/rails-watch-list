@@ -3,7 +3,6 @@ A simple Ruby on Rails project that allow users to create a movie, bookmark it i
 
 ![main banner](https://github.com/ashakiran07/rails-watch-list/blob/master/public/img/list-moviestypes.png?raw=true)
 
-
 ## Technologies
 This project was created with:
  - [Ruby](https://www.ruby-lang.org/pt/)
