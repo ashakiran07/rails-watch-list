@@ -61,7 +61,6 @@ As user you can manipulate all **CRUD** operations like:
      - Adding CSS to main page;
      - Adding CSS to Show page;
      - Movie Controller created;
-
      - Creating new page to add new bookmark;
 
      - Convert the project o use postgresql;
